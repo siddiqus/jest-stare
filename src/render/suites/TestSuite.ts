@@ -88,11 +88,24 @@ export class TestSuite {
             const div = document.createElement("div") as HTMLDivElement;
             div.classList.add("test-result-item", "my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
 
-            const h5 = document.createElement("h5") as HTMLHeadingElement;
-            h5.classList.add("border-bottom", "pb-2", "mb-0", "display-5");
-            h5.textContent = testResult.testFilePath;
+            const testFilePath = testResult.testFilePath;
+            let testFilePathSplit = [];
+            if (testFilePath.includes("/")) {
+                testFilePathSplit = testFilePath.split("/")
+            } else {
+                testFilePathSplit = testFilePath.split("\\");
+            }
+            const filename = testFilePathSplit[testFilePathSplit.length - 1];
 
-            div.appendChild(h5);
+            const filenameH5 = document.createElement("h5") as HTMLHeadingElement;
+            filenameH5.classList.add("pb-2", "mb-0", "display-5");
+            filenameH5.textContent = filename;
+            div.appendChild(filenameH5);
+
+            const fullFilepath = document.createElement("p") as HTMLParagraphElement;
+            fullFilepath.classList.add("border-bottom", "pb-2", "mb-0", "display-5");
+            fullFilepath.textContent = testFilePath;
+            div.appendChild(fullFilepath);
 
             // if a flat test report were to be used, simply
             // testResult.testResults.forEach((test) => {
