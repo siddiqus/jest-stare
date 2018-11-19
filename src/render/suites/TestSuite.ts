@@ -86,7 +86,7 @@ export class TestSuite {
             }
 
             const div = document.createElement("div") as HTMLDivElement;
-            div.classList.add("my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
+            div.classList.add("test-result-item", "my-3", "p-3", "bg-white", "rounded", "box-shadow", testStatusClass);
 
             const h5 = document.createElement("h5") as HTMLHeadingElement;
             h5.classList.add("border-bottom", "pb-2", "mb-0", "display-5");

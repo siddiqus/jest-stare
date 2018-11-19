@@ -128,3 +128,9 @@ code {
 .failoff-switch-checkbox:checked + .onoff-switch-label .failoff-switch-switch {
     right: 0px; 
 }
+.test-result-item {
+    border: 1px solid lightgray;
+}
+.display-5 {
+    word-break: break-word;
+}
