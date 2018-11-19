@@ -43,7 +43,7 @@ code {
 .lh-150 { line-height: 1.5; }
 
 .onoff-switch {
-    position: relative; width: 90px;
+    position: relative; width: 90px; margin-top: 5px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoff-switch-label {
@@ -80,7 +80,7 @@ code {
     background: #FFFFFF;
     position: absolute; top: 0; bottom: 0;
     right: 56px;
-    border: 2px solid #999999; border-radius: 20px;
+    border: 2px solid #28a745; border-radius: 20px;
     transition: all 0.3s ease-in 0s; 
 }
 .passoff-switch-checkbox:checked + .onoff-switch-label .passoff-switch-inner {
@@ -119,7 +119,7 @@ code {
     background: #FFFFFF;
     position: absolute; top: 0; bottom: 0;
     right: 56px;
-    border: 2px solid #999999; border-radius: 20px;
+    border: 2px solid #dc3545; border-radius: 20px;
     transition: all 0.3s ease-in 0s; 
 }
 .failoff-switch-checkbox:checked + .onoff-switch-label .failoff-switch-inner {
