@@ -166,7 +166,7 @@ export class Test {
             collapseDiv.appendChild(worthlessDiv);
 
             const button = document.createElement("button") as HTMLButtonElement;
-            button.classList.add("btn", "btn-light", "btn-sm");
+            button.classList.add("btn", "btn-default", "btn-sm");
             button.type = "button";
             button.setAttribute("data-toggle", "collapse");
             button.setAttribute("data-target", "#" + titleId);

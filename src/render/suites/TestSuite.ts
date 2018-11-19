@@ -91,7 +91,7 @@ export class TestSuite {
             const testFilePath = testResult.testFilePath;
             let testFilePathSplit = [];
             if (testFilePath.includes("/")) {
-                testFilePathSplit = testFilePath.split("/")
+                testFilePathSplit = testFilePath.split("/");
             } else {
                 testFilePathSplit = testFilePath.split("\\");
             }
